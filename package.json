@@ -1,0 +1,10 @@
+{
+  "name": "nuxt3-monorepo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm run -r dev",
+    "build": "pnpm run -r build"
+  },
+  "packageManager": "pnpm@9.3.0"
+}
