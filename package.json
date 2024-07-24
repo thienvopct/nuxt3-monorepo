@@ -1,10 +1,16 @@
 {
   "name": "nuxt3-monorepo",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
     "dev": "pnpm run -r dev",
-    "build": "pnpm run -r build"
+    "build": "pnpm run -r build",
+    "types:check": "tsc"
   },
-  "packageManager": "pnpm@9.3.0"
+  "packageManager": "pnpm@9.3.0",
+  "dependencies": {
+    "@packages/ui": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
 }

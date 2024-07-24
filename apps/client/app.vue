@@ -1,5 +1,4 @@
 <template>
-  <div>
-    Client App
-  </div>
+  <message bg-color="#008C73">Client</message>
 </template>
+

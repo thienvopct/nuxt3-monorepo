@@ -1,0 +1,8 @@
+{
+  "name": "@packages/ui",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "dependencies": {
+    "@nuxt/kit": "^3.12.4"
+  }
+}
