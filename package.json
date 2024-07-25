@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "pnpm run -r dev",
     "build": "pnpm run -r build",
-    "types:check": "tsc"
+    "types:check": "tsc",
+    "lint:eslint": "pnpm run -r lint:eslint"
   },
   "packageManager": "pnpm@9.3.0",
   "dependencies": {
