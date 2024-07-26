@@ -1,9 +1,12 @@
 {
   "name": "nuxt3-monorepo",
   "version": "1.0.0",
+  "main": "index.js",
   "scripts": {
     "dev": "pnpm run -r dev",
-    "typecheck": "pnpm run -r typecheck"
+    "build": "pnpm run -r build",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage.enabled true"
   },
-  "packageManager": "pnpm@9.6.0"
+  "packageManager": "pnpm@9.3.0"
 }

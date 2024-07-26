@@ -13,5 +13,8 @@
   "dependencies": {
     "nuxt": "^3.12.4",
     "vue": "latest"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^2.0.4"
   }
 }
