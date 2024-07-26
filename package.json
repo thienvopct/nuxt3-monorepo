@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "pnpm run -r dev",
+    "build": "pnpm run -r build",
     "typecheck": "pnpm run -r typecheck"
   },
   "packageManager": "pnpm@9.6.0"
