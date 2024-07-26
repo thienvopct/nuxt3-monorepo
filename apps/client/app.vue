@@ -1,4 +1,11 @@
-<template>
-  <message bg-color="#008C73">Client</message>
-</template>
+<script lang="ts" setup>
+const counter = ref(0);
+</script>
 
+<template>
+  <div>
+    <button @click="counter--">Decrease</button>
+    <slot />
+    <button @click="counter++">Increase</button>
+  </div>
+</template>

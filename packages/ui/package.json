@@ -2,6 +2,10 @@
   "name": "@packages/ui",
   "version": "1.0.0",
   "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "lint:eslint": "eslint ."
+  },
   "dependencies": {
     "@nuxt/kit": "^3.12.4"
   }

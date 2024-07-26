@@ -1,14 +1,14 @@
 <script setup lang="ts">
 const props = defineProps<{
-  bgColor: string
-}>()
+  bgColor: string;
+}>();
 </script>
 <template>
-  <div class="message" :style="{ backgroundColor: props.bgColor }" >
+  <div class="message" :style="{ backgroundColor: props.bgColor }">
     <slot />
   </div>
 </template>
-<style  scoped>
+<style scoped lang="scss">
 .message {
   height: 98vh;
   width: 99vw;

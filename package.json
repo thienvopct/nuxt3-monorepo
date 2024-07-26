@@ -4,13 +4,23 @@
   "scripts": {
     "dev": "pnpm run -r dev",
     "build": "pnpm run -r build",
-    "types:check": "tsc"
+    "types:check": "tsc",
+    "lint:eslint": "pnpm run -r lint:eslint"
   },
   "packageManager": "pnpm@9.3.0",
   "dependencies": {
     "@packages/ui": "workspace:*"
   },
   "devDependencies": {
-    "typescript": "^5.2.2"
+    "@eslint/js": "^9.7.0",
+    "@nuxt/eslint": "^0.3.13",
+    "@types/eslint__js": "^8.42.3",
+    "eslint": "^9.7.0",
+    "eslint-plugin-vue": "^9.27.0",
+    "globals": "^15.8.0",
+    "sass": "^1.77.8",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^7.17.0",
+    "vue-eslint-parser": "^9.4.3"
   }
 }

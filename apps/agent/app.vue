@@ -1,3 +1,11 @@
+<script lang="ts" setup>
+const counter = ref(0);
+</script>
+
 <template>
-  <message bg-color="#FD6C48">Agent</message>
+  <div>
+    <button @click="counter--">Decrease</button>
+    <slot />
+    <button @click="counter++">Increase</button>
+  </div>
 </template>
