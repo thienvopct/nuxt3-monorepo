@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "pnpm run -r dev",
     "build": "pnpm run -r build",
-    "typecheck": "pnpm run -r typecheck"
+    "typecheck": "pnpm run -r typecheck",
+    "test": "pnpm run -r test"
   },
   "packageManager": "pnpm@9.6.0"
 }

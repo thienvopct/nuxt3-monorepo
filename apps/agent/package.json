@@ -10,7 +10,8 @@
     "postinstall": "nuxt prepare",
     "typecheck": "nuxi typecheck",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "test": "vitest run"
   },
   "dependencies": {
     "@nuxt/eslint": "^0.4.0",
@@ -20,6 +21,7 @@
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
     "@repo/tsconfig": "workspace:*",
+    "@repo/vitest-config": "workspace:*",
     "typescript": "^5.5.4",
     "vue-tsc": "^2.0.29"
   }

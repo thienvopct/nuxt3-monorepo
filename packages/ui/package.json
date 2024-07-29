@@ -2,10 +2,12 @@
   "name": "@packages/ui",
   "version": "1.0.0",
   "main": "index.ts",
+  "type": "module",
   "scripts": {
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "test": "vitest run"
   },
   "packageManager": "pnpm@9.6.0",
   "dependencies": {
@@ -14,6 +16,7 @@
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
     "@repo/tsconfig": "workspace:*",
+    "@repo/vitest-config": "workspace:*",
     "eslint": "^9.8.0",
     "typescript": "^5.5.4"
   }

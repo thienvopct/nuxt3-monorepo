@@ -1,0 +1,1 @@
+export const range = () => [0, 10];
