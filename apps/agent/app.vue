@@ -4,6 +4,7 @@ const counter = ref(0);
 
 <template>
   <div>
+    {{ counter }}
     <button @click="counter--">Decrease</button>
     <slot />
     <button @click="counter++">Increase</button>

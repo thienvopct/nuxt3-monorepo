@@ -8,5 +8,8 @@
   },
   "dependencies": {
     "@nuxt/kit": "^3.12.4"
+  },
+  "devDependencies": {
+    "@repo/esconfig": "workspace:*"
   }
 }

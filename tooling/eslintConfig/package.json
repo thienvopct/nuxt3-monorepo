@@ -1,0 +1,6 @@
+{
+    "name": "@repo/esconfig",
+    "version": "1.0.0",
+    "type": "module",
+    "files": ["esCommon.js", "esNuxtConfig.js", "esPackagesConfig.js"]
+}

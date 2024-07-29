@@ -51,6 +51,10 @@ importers:
       vue:
         specifier: latest
         version: 3.4.33(typescript@5.5.4)
+    devDependencies:
+      '@repo/esconfig':
+        specifier: workspace:*
+        version: link:../../tooling/eslintConfig
 
   apps/client:
     dependencies:
@@ -60,12 +64,22 @@ importers:
       vue:
         specifier: latest
         version: 3.4.33(typescript@5.5.4)
+    devDependencies:
+      '@repo/esconfig':
+        specifier: workspace:*
+        version: link:../../tooling/eslintConfig
 
   packages/ui:
     dependencies:
       '@nuxt/kit':
         specifier: ^3.12.4
         version: 3.12.4(magicast@0.3.4)(rollup@4.19.0)
+    devDependencies:
+      '@repo/esconfig':
+        specifier: workspace:*
+        version: link:../../tooling/eslintConfig
+
+  tooling/eslintConfig: {}
 
 packages:
 
