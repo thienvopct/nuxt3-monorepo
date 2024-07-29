@@ -3,14 +3,18 @@
   "version": "1.0.0",
   "main": "index.ts",
   "scripts": {
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "packageManager": "pnpm@9.6.0",
   "dependencies": {
     "@nuxt/kit": "^3.12.4"
   },
   "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
     "@repo/tsconfig": "workspace:*",
+    "eslint": "^9.8.0",
     "typescript": "^5.5.4"
   }
 }

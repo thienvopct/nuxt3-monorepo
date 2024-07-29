@@ -8,13 +8,17 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "typecheck": "nuxi typecheck"
+    "typecheck": "nuxi typecheck",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
+    "@nuxt/eslint": "^0.4.0",
     "nuxt": "^3.12.4",
     "vue": "latest"
   },
   "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
     "@repo/tsconfig": "workspace:*",
     "typescript": "^5.5.4",
     "vue-tsc": "^2.0.29"
