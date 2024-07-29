@@ -15,6 +15,7 @@
     "vue": "latest"
   },
   "devDependencies": {
-    "@vitest/coverage-v8": "^2.0.4"
+    "@vitest/coverage-v8": "^2.0.4",
+    "@repo/viteconfig": "workspace:*"
   }
 }

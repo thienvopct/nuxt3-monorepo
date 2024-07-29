@@ -1,0 +1,7 @@
+{
+    "name": "@repo/viteconfig",
+    "version": "1.0.0",
+    "files": ["vite.config.ts"],
+    "type": "module"
+  }
+  

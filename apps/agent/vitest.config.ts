@@ -1,13 +1,17 @@
-import { defineConfig } from 'vitest/config';
+import { mergeConfig } from 'vitest/config';
 
 import viteConfig from './vite.config';
 
-export default defineConfig({
-  resolve: viteConfig.resolve,
+import baseVitestConfig from '../../vitest.config'
+
+export default mergeConfig(baseVitestConfig ,{
+  resolve: viteConfig,
 
   test: {
     coverage: {
-      include: ['rule/**/*.[jt]s'],
+      include: [
+        'rule/**/*.[jt]s',
+      ],
       provider: 'v8',
       reporter: ['text-summary', 'json-summary', 'json'],
     },

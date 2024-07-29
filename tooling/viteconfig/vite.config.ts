@@ -25,5 +25,12 @@ export default defineConfig({
   ],
 
   resolve: {
+    alias: {
+      '@@': path.resolve(__dirname, '.'),
+      '~~': path.resolve(__dirname, '.'),
+      '@hr4c-target/types': path.resolve(__dirname, 'packages/types'),
+      '@hr4c-target/ui': path.resolve(__dirname, 'packages/ui'),
+      '@hr4c-target/utils': path.resolve(__dirname, 'packages/utils'),
+    },
   },
 });
