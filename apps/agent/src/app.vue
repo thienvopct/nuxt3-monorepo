@@ -1,3 +1,6 @@
 <template>
-  <message bg-color="#FD6C48">Agent</message>
+  <div>
+    <message bg-color="#FD6C48">Agent</message>
+    <slot />
+  </div>
 </template>

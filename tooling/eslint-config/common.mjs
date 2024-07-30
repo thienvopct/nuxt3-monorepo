@@ -3,34 +3,23 @@ import tseslint from 'typescript-eslint';
 import vueEslintParser from 'vue-eslint-parser';
 import eslintConfigPrettier from 'eslint-config-prettier';
 import pluginVue from 'eslint-plugin-vue';
-import pluginImport from 'eslint-plugin-import';
 import pluginVitest from 'eslint-plugin-vitest';
+import { fixupConfigRules } from "@eslint/compat";
 
 import { FlatCompat } from "@eslint/eslintrc";
 
 const compat = new FlatCompat();
 
+
 export default tseslint.config(
   /* Predefined configurations */
-  eslint.configs.all,
   // ConfigError: Config (unnamed): Key "plugins": Cannot redefine plugin "import".
-  // ...compat.extends('airbnb-base', 'airbnb-typescript/base'),
-  ...tseslint.configs.recommendedTypeChecked,
+  ...fixupConfigRules(compat.extends('airbnb-base', 'airbnb-typescript/base')),
+  ...fixupConfigRules(tseslint.configs.recommendedTypeChecked),
   ...pluginVue.configs['flat/strongly-recommended'],
   pluginVitest.configs.recommended,
   eslintConfigPrettier,
-
-  /* Plugins setting */
-  {
-    settings: {
-      'import/resolver': {
-        typescript: true,
-        node: true
-      },
-    },
-  },
-
-  /* Parser settings for TS and Vue */
+  eslint.configs.all,
   {
     languageOptions: {
       parser: vueEslintParser,
@@ -42,7 +31,17 @@ export default tseslint.config(
     }
   },
 
-  /* Config linting settings */
+  // /* Plugins setting */
+  {
+    settings: {
+      'import/resolver': {
+        typescript: true,
+        node: true
+      },
+    },
+  },
+
+  // /* Config linting settings */
   {
     linterOptions: {
       noInlineConfig: false,
@@ -50,7 +49,7 @@ export default tseslint.config(
     }
   },
 
-  /* TypeScript rules to be solved */
+  // /* TypeScript rules to be solved */
   {
     rules: {
       // TODO: We should resolve all `any` type when enable the following rule
@@ -70,7 +69,7 @@ export default tseslint.config(
     },
   },
 
-  /* Vitest setting rules */
+  // /* Vitest setting rules */
   {
     rules: {
       // Enforce the use of `test` instead of `it`
@@ -86,7 +85,7 @@ export default tseslint.config(
     },
   },
 
-  /* Vue setting rules */
+  // /* Vue setting rules */
   {
     files: ['**/*.vue'],
     rules: {
@@ -196,5 +195,9 @@ export default tseslint.config(
       // TODO: Currently this rule causes false-negative
       'vue/valid-v-for': 'off',
     },
-  },
+  }
 )
+
+
+
+
