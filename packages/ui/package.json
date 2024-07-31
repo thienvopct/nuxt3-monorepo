@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.ts",
   "scripts": {
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage.enabled true"
   },
   "packageManager": "pnpm@9.6.0",
   "dependencies": {
@@ -11,7 +13,7 @@
   },
   "devDependencies": {
     "@repo/tsconfig": "workspace:*",
-    "@repo/viteconfig": "workspace:*",
+    "@repo/vitest-config": "workspace:*",
     "typescript": "^5.5.4"
   }
 }

@@ -1,0 +1,14 @@
+{
+  "name": "@repo/vitest-config",
+  "version": "1.0.0",
+  "files": [
+    "vite.config.js, vitest.config.js"
+  ],
+  "type": "module",
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.1",
+    "@vitest/coverage-v8": "^2.0.4",
+    "vite": "^5.3.5",
+    "vitest": "^2.0.4"
+  }
+}

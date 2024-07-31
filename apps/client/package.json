@@ -8,14 +8,15 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "typecheck": "nuxt typecheck"
+    "typecheck": "nuxt typecheck",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage.enabled true"
   },
   "dependencies": {
     "nuxt": "^3.12.4",
     "vue": "latest"
   },
   "devDependencies": {
-    "@vitest/coverage-v8": "^2.0.4",
-    "@repo/viteconfig": "workspace:*"
+    "@repo/vitest-config": "workspace:*"
   }
 }

@@ -1,6 +1,6 @@
 import path from 'node:path';
 
-import baseConfig from '@repo/viteconfig/vite.config';
+import baseConfig from '@repo/vitest-config/vite.config';
 
 import { mergeConfig } from 'vite';
 

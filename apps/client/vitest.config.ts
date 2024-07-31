@@ -2,7 +2,7 @@ import { mergeConfig } from 'vitest/config';
 
 import viteConfig from './vite.config';
 
-import baseVitestConfig from '../../vitest.config'
+import baseVitestConfig from '@repo/vitest-config/vitest.config.js'
 
 export default mergeConfig(baseVitestConfig ,{
   resolve: viteConfig,

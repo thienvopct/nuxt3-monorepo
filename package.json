@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "pnpm run -r dev",
     "build": "pnpm run -r build",
-    "test": "vitest run",
-    "test:coverage": "vitest run --coverage.enabled true"
+    "test": "pnpm run -r test",
+    "test:coverage": "pnpm run -r test:coverage"
   },
   "packageManager": "pnpm@9.3.0"
 }
